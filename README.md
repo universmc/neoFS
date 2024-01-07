@@ -1,63 +1,83 @@
-# neoFS
-Description
+# Univers MC Cloud - Cours sur le Développement Web Fullstack et IA
 
-Une brève description de votre projet, mettant en avant son objectif, ses fonctionnalités clés, et comment il intègre le machine learning, la génération de scripts full stack, et l'IA.
-Fonctionnalités
+Ce projet présente un cours interactif sur le développement web fullstack et l'intégration de l'intelligence artificielle, en utilisant NeoFS (IA Codex GPT) pour une génération de code assistée.
 
-    Machine Learning : Détails sur comment le projet utilise le machine learning, par exemple, l'intégration de TensorFlow.js pour l'entraînement de modèles dans le navigateur.
-    Génération de Scripts Full Stack : Explication de la manière dont les scripts sont générés pour le développement full stack.
-    Optimisation avec WebDev : Comment le projet utilise WebDev pour la prévisualisation et l'optimisation des pages web.
-    Intégration de l'IA : Utilisation de GPT-3 ou Codex pour améliorer le développement et offrir des fonctionnalités avancées.
+## Structure du Projet
 
-Technologies Utilisées
 
-Listez les technologies, langages, frameworks et outils utilisés dans le projet.
-Installation et Configuration
+## Structure du Cours
 
-Instructions étape par étape pour installer et configurer le projet sur un environnement local.
-Utilisation
+### Fondamentaux du Développement Web Front-End
+- **HTML et CSS**: Structure de base, mise en forme, responsive design.
+- **SASS**: Préprocesseur CSS pour un style plus efficace.
+- **SVG**: 
+- **ASCII Art en Web Design**: Utilisation créative des caractères ASCII.
+- **JavaScript et React**: Bases de JavaScript, introduction à React.
 
-Guide sur comment utiliser l'application, avec des exemples de commandes ou d'actions si nécessaire.
-Contribution
+### Fondamentaux du Développement Web Back-End
+- **PHP**: Langage de script côté serveur.
+- **SQL**: Gestion de bases de données relationnelles.
+- **Python**: Scripting, analyse de données.
+- **Node.js et Swagger**: Création d'API RESTful.
 
-Informations sur comment contribuer au projet, y compris les directives de contribution et le code de conduite.
+### Fullstack Development avec NeoFS (IA Codex GPT)
+- **Introduction à NeoFS**: Agent IA Codex GPT pour le développement fullstack.
+# Documentation du Projet Full Stack
 
-1. Génération de Code
+## Introduction
+Description générale du projet, y compris son objectif et ses fonctionnalités principales.
 
-    Front-End (HTML, CSS, JS) : NeoFS peut générer des modèles de code pour des interfaces utilisateur, en prenant en compte les meilleures pratiques de conception web et la réactivité.
-    Back-End (PHP, SQL) : Générer des scripts back-end pour la logique métier, l'accès aux bases de données, et la gestion des API.
+## Configuration du Projet
+### Frontend
+- Emplacement : `client/`
+- Technologies utilisées : React, etc.
+- Commandes principales :
+  - Démarrage : `make start-client`
+  - Installation des dépendances : `make install-client`
 
-2. Analyse de Code
+### Backend
+- Emplacement : `server/`
+- Technologies utilisées : Node.js, Express, etc.
+- Commandes principales :
+  - Démarrage : `make start-server`
+  - Installation des dépendances : `make install-server`
 
-    Détection d'Erreurs et de Bugs : Analyser le code pour identifier les erreurs syntaxiques ou logiques.
-    Optimisation de Code : Suggérer des améliorations pour l'efficacité, la lisibilité, et la performance du code.
+## Exécution du Projet
+Instructions pour démarrer le projet, y compris les commandes `make`.
 
-3. Suggestion et Correction de Code
+## Tests
+Détails sur la façon d'exécuter les tests pour le projet.
 
-    Améliorations Automatiques : Proposer des corrections automatiques pour les erreurs courantes.
-    Suggestions Basées sur les Tendances : Offrir des suggestions basées sur les dernières tendances et meilleures pratiques en développement web.
+## Déploiement
+Instructions et scripts pour le déploiement de l'application.
 
-4. Compilation des Composants Web Full Stack
+## Notes Additionnelles
+Toute autre information utile pour les développeurs ou les utilisateurs du projet.
 
-    Intégration Front-End et Back-End : Compiler des applications complètes en intégrant à la fois le front-end et le back-end.
-    Prévisualisation en Temps Réel : Offrir une fonctionnalité de prévisualisation pour voir le rendu du code généré.
+- **Intégration de NeoFS dans le Workflow de Développement**: Génération de scripts.
+- **Développement Assisté par IA**: Aide dans la génération de code front-end et back-end.
 
-Développement et Implémentation
+## Installation et Configuration
 
-    Utilisation de l'IA et du Machine Learning : Utiliser des modèles d'apprentissage automatique pour améliorer la génération et l'analyse de code.
-    Interface Utilisateur Intuitive : Développer une interface utilisateur qui permet aux développeurs d'interagir facilement avec NeoFS, par exemple, via une interface graphique ou une ligne de commande.
+Expliquez ici comment installer et configurer votre projet.
+Mafile
 
-Intégration avec les Outils Existant
+## Utilisation
 
-    Compatibilité avec les IDEs : Assurer la compatibilité avec les environnements de développement intégrés populaires.
-    Plugins et Extensions : Offrir des plugins pour intégrer NeoFS dans des outils existants.
+Donnez des instructions sur la manière d'utiliser le projet.
 
-Sécurité et Confidentialité
+## Contribution
 
-    Protection des Données : Assurer la sécurité des données de code traitées par NeoFS.
-    Respect des Normes de Confidentialité : Se conformer aux normes de confidentialité et de sécurité des données.
+Informations sur la façon de contribuer au projet.
 
-Feedback et Amélioration Continue
+## Licence
 
-    Retours Utilisateurs : Mettre en place un système pour recueillir les retours des utilisateurs et les intégrer dans les mises à jour de NeoFS.
-    Mises à Jour Régulières : Fournir des mises à jour régulières pour améliorer les fonctionnalités et corriger les bugs.
+Indiquez la licence sous laquelle le projet est publié.
+
+## Contact
+
+Informations de contact pour les utilisateurs qui souhaitent vous contacter ou obtenir de l'aide.
+
+---
+
+cc by mc+neoFS

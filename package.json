@@ -1,12 +1,17 @@
 {
-  "name": "neofs",
+  "name": "machine-learning",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch build/style.scss frontend/css/style.css",
+    "srv-js": "node backend/server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "univers-mc",
+  "dependencies": {
+    "marked": "^11.1.1"
+  }
 }
