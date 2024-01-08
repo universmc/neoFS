@@ -1,7 +1,8 @@
+@charset "UTF-8";
 /* style.css */
-body {
-  min-height: auto;
-  min-width: auto;
+html, body {
+  min-height: 100vh;
+  min-width: 100vh;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -11,7 +12,8 @@ body {
 
 header {
   display: flex;
-  min-width: 100%;
+  min-width: 100vh;
+  min-height: 10vh;
   background-color: #333;
   color: white;
   text-align: center;
@@ -19,7 +21,58 @@ header {
 }
 
 main {
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  min-width: 90vh;
+}
+
+.devOps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.devOps-background {
+  background-image: url("desktop.png");
+  background-size: cover;
+  background-position: center center;
+  height: 610Px; /* ou toute autre hauteur nécessaire */
+  width: 610px;
+}
+
+.devPlanContent {
+  display: flex;
+  height: 610px;
+  width: 987px;
+  border: 1px solid;
+}
+
+.window-controls {
+  display: flex;
+  min-width: 100%;
+}
+
+.bg-main-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.bg-center {
+  display: flex;
+  width: 90%;
+}
+
+.init-row {
+  display: flex;
+  min-height: 100%;
+}
+
+.img-contenair {
+  display: flex;
+  justify-content: center;
 }
 
 .cours-content {
@@ -69,10 +122,8 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  min-width: 100vh;
+  min-height: 10vh;
 }
 
 h2, h3 {
