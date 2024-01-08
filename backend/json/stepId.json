@@ -8,8 +8,8 @@
         "dateCreate": "2023-01-01",
         "dateUpdate": "2023-04-01",
         "dateStatus": "En cours",
-        "imgUrl": "url_to_image_step1.jpg",
-        "mdUrl": "url_to_markdown_step1.md"
+        "imgUrl": "data/bg-img/devops-img.png",
+        "mdUrl": "src/inc/stepId/step1.md"
       },
       {
         "numeroId": 2,

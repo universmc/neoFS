@@ -42,6 +42,10 @@ main {
   width: 610px;
 }
 
+.img-step1 {
+  width: 32px;
+}
+
 .devPlanContent {
   display: flex;
   height: 610px;
