@@ -1,20 +1,29 @@
-fetch('http://localhost:3000/json/dev-plan')
+// Chargement et conversion du contenu Markdown
+fetch('src/inc/stepID/step1.md')
   .then(response => {
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+        throw new Error(`Erreur HTTP, statut ${response.status}`);
+    }
+    return response.text();
+  })
+  .then(markdown => {
+    const htmlContent = marked(markdown);
+    document.querySelector('.devops-item').innerHTML = htmlContent;
+  })
+  .catch(error => console.error('Erreur de chargement du fichier Markdown:', error));
+
+// Chargement des données JSON pour la metaDescription, l'image, et le lien
+fetch('backend/json/stepId.json')
+  .then(response => {
+    if (!response.ok) {
+        throw new Error(`Erreur HTTP, statut ${response.status}`);
     }
     return response.json();
   })
   .then(data => {
-    const contentDiv = document.getElementById('devPlanContent');
-    
-    Object.entries(data).forEach(([key, value]) => {
-      const section = document.createElement('section');
-      section.innerHTML = `<h2>${key}</h2><p>${JSON.stringify(value, null, 2)}</p>`;
-      contentDiv.appendChild(section);
-    });
+    const step1Data = data.steps.find(step => step.numeroId === 1);
+    document.getElementById('metaDescription_step1').textContent = step1Data.metaDescription;
+    document.getElementById('img_step1').src = step1Data.imgUrl;
+    document.getElementById('mdUrl_step1').href = step1Data.mdUrl;
   })
-  .catch(error => {
-    console.error('Error fetching the development plan:', error);
-    // Vous pouvez afficher un message d'erreur dans votre HTML ici
-  });
+  .catch(error => console.error('Erreur de chargement des données JSON:', error));
