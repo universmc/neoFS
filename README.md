@@ -1,83 +1,77 @@
-# Univers MC Cloud - Cours sur le Développement Web Fullstack et IA
+# Univers MC Cloud - Formation en Développement Web Fullstack et IA
 
-Ce projet présente un cours interactif sur le développement web fullstack et l'intégration de l'intelligence artificielle, en utilisant NeoFS (IA Codex GPT) pour une génération de code assistée.
+Bienvenue sur le projet Univers MC Cloud, un espace dédié à la formation en développement web fullstack et en intelligence artificielle. Ce projet est conçu pour offrir une expérience d'apprentissage interactive, en utilisant NeoFS et l'IA Codex GPT pour une génération de code assistée.
 
 ## Structure du Projet
 
+Le projet est divisé en plusieurs composants principaux :
 
-## Structure du Cours
+- **Frontend** : Développé avec React, intégrant des designs modernes et interactifs.
+- **Backend** : Construit avec Node.js et Express, et incluant une documentation API Swagger.
+- **Intégration IA Codex GPT** : Utilisation de NeoFS pour générer des codes et scripts.
 
-### Fondamentaux du Développement Web Front-End
-- **HTML et CSS**: Structure de base, mise en forme, responsive design.
-- **SASS**: Préprocesseur CSS pour un style plus efficace.
-- **SVG**: 
-- **ASCII Art en Web Design**: Utilisation créative des caractères ASCII.
-- **JavaScript et React**: Bases de JavaScript, introduction à React.
+## Ports et Services Utilisés
 
-### Fondamentaux du Développement Web Back-End
-- **PHP**: Langage de script côté serveur.
-- **SQL**: Gestion de bases de données relationnelles.
-- **Python**: Scripting, analyse de données.
-- **Node.js et Swagger**: Création d'API RESTful.
+- Serveur PHP : `http://localhost:5011`
+- Serveur Node.js/Express : `http://localhost:3000`
+- Swagger UI : `http://localhost:3001`
+- Autres services : OVH (Port 8080), FTP (Port 21), MySQL, et Hub (Port 420).
 
-### Fullstack Development avec NeoFS (IA Codex GPT)
-- **Introduction à NeoFS**: Agent IA Codex GPT pour le développement fullstack.
-# Documentation du Projet Full Stack
+## Documentation Full Stack
 
-## Introduction
-Description générale du projet, y compris son objectif et ses fonctionnalités principales.
-
-## Configuration du Projet
 ### Frontend
-- Emplacement : `client/`
-- Technologies utilisées : React, etc.
-- Commandes principales :
-  - Démarrage : `make start-client`
-  - Installation des dépendances : `make install-client`
+
+- **Technologies** : React, SASS, SVG, JavaScript.
+- **Commandes** :
+  - Démarrage : `npm start`
+  - Installation des dépendances : `npm install`
 
 ### Backend
-- Emplacement : `server/`
-- Technologies utilisées : Node.js, Express, etc.
-- Commandes principales :
-  - Démarrage : `make start-server`
-  - Installation des dépendances : `make install-server`
 
-## Exécution du Projet
-Instructions pour démarrer le projet, y compris les commandes `make`.
+- **Technologies** : Node.js, Express, Swagger.
+- **Swagger UI** : Documentation API sur `http://localhost:3000/api-docs`.
+- **Commandes** :
+  - Démarrage : `node server.js`
+  - Installation des dépendances : `npm install`
 
-## Tests
-Détails sur la façon d'exécuter les tests pour le projet.
+### Intelligence Artificielle et NeoFS
 
-## Déploiement
-Instructions et scripts pour le déploiement de l'application.
-
-## Notes Additionnelles
-Toute autre information utile pour les développeurs ou les utilisateurs du projet.
-
-- **Intégration de NeoFS dans le Workflow de Développement**: Génération de scripts.
-- **Développement Assisté par IA**: Aide dans la génération de code front-end et back-end.
+- **Utilisation de NeoFS** : Intégration dans le processus de développement.
+- **Développement Assisté par IA** : Aide à la génération de code front-end et back-end.
 
 ## Installation et Configuration
 
-Expliquez ici comment installer et configurer votre projet.
-Mafile
+Pour installer et configurer le projet :
+
+1. Cloner le repository : `git clone [URL_DU_REPOSITORY]`
+2. Installer les dépendances :
+   - Frontend : `cd frontend && npm install`
+   - Backend : `cd backend && npm install`
 
 ## Utilisation
 
-Donnez des instructions sur la manière d'utiliser le projet.
+Pour utiliser le projet :
+
+1. Démarrer le Backend : `cd backend && node server.js`
+2. Démarrer le Frontend : `cd frontend && npm start`
+
+## Tests
+
+Instructions sur l'exécution des tests.
 
 ## Contribution
 
-Informations sur la façon de contribuer au projet.
+Guidelines pour contribuer au projet.
 
 ## Licence
 
-Indiquez la licence sous laquelle le projet est publié.
+Ce projet est sous licence XYZ.
 
 ## Contact
 
-Informations de contact pour les utilisateurs qui souhaitent vous contacter ou obtenir de l'aide.
+Pour toute question, veuillez contacter [Email/Contact Info].
 
 ---
 
 cc by mc+neoFS
+http://54.36.91.62:8080

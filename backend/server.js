@@ -5,18 +5,30 @@ const swaggerJsdoc = require('swagger-jsdoc');
 
 const app = express();
 
-// Configuration Swagger
-const swaggerOptions = {
-    definition: {
-        openapi: '3.0.0',
-        info: {
-            title: 'Mon API',
-            version: '1.0.0',
-            description: 'Description de l\'API'
-        },
+const swaggerDefinition = {
+    openapi: '3.0.1',
+    info: {
+      title: 'univers-mc.cloud API',
+      version: '1.0.0',
+      description: 'The API for univers-mc.cloud',
     },
-    apis: ['./routes/*.js'] // Mettez à jour le chemin selon votre structure
-};
+    servers: [
+      {
+        url: 'http://localhost:3000', // URL de votre serveur local
+        description: 'Local server',
+      },
+      // Ajoutez d'autres serveurs ici si nécessaire
+    ],
+  };
+  
+  const options = {
+    swaggerDefinition,
+    // Emplacement des fichiers qui contiennent des commentaires de documentation
+    apis: ['./routes/*.js'], // Changez en fonction de votre structure de projet
+  };
+  
+  const swaggerSpec = swaggerJSDoc(options);
+  
 
 const swaggerSpecs = swaggerJsdoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs));

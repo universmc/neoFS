@@ -3,31 +3,28 @@ CLIENT_DIR := client
 SERVER_DIR := server
 
 # Commandes de démarrage
-start-client:
-	cd $(CLIENT_DIR) && npm start
+start-nodejs:
+	@echo "Démarrage du serveur Node.js..."
+	@cd $(SERVER_DIR) && npm start
 
-start-srv:
-	@echo "Démarrage du serveur PHP et compilation SASS..."
-	@php -S localhost:5011 &
-	@npm run style &
-	@npm run srv-js
+start-php:
+	@echo "Démarrage du serveur PHP..."
+	@php -S localhost:$(PORT_PHP)
 
-# Installation des dépendances
-install-client:
-	cd $(CLIENT_DIR) && npm install
+# Commandes pour les services et outils
+start-mysql:
+	@echo "Démarrage du service MySQL..."
+	# Commande pour démarrer MySQL
 
-install-server:
-	cd $(SERVER_DIR) && npm install
+start-ftp:
+	@echo "Démarrage du service FTP..."
+	# Commande pour démarrer le service FTP
 
-# Commande pour lancer à la fois le client et le serveur (si nécessaire)
-start-all: start-server start-client
-
-# Commandes pour les tests, le déploiement, etc.
-test:
-	# Ajouter les commandes de test ici
-
-deploy:
-	# Ajouter les commandes de déploiement ici
+# Test des intégrations API
+test-apis:
+	@echo "Test des intégrations avec GitHub, Notion, HuggingFace, etc..."
+	# Commandes pour tester les intégrations API
 
 # Autres commandes utiles
-.PHONY: start-client start-server install-client install-server test deploy
+.PHONY: start-nodejs start-php start-mysql start-ftp test-apis
+

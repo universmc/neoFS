@@ -47,13 +47,13 @@
       {
         "numeroId": 5,
         "titreId": "Développement Backend",
-        "metaDescription": "Exploration des langages de programmation backend tels que sawgger /json/ , avec l'utilisation de bases de données SQL et MySQL, et l'intégration de Node.js, et l'intgration branch version de github /docs/readm.md",
-        "examplePrompt": "Création d'une API REST avec Node.js et Swagger pour la documentation github.",
+        "metaDescription": "Exploration des langages de programmation backend tels que PHP, avec l'utilisation de bases de données SQL et MySQL, et l'intégration de Node.js.",
+        "examplePrompt": "Création d'une API REST avec Node.js et Swagger pour la documentation.",
         "dateCreate": "2023-03-20",
         "dateUpdate": "2023-04-15",
         "dateStatus": "En cours",
         "imgUrl": "url_to_image_step5.jpg",
-        "mdUrl": "tmp/steps/md/step5.md"
+        "mdUrl": "url_to_markdown_step5.md"
       },
       {
         "numeroId": 6,
