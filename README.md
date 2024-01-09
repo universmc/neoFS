@@ -61,11 +61,11 @@ Instructions sur l'exécution des tests.
 
 ## Contribution
 
-Guidelines pour contribuer au projet.
+Guidelines howto
 
 ## Licence
 
-Ce projet est sous licence XYZ.
+Ce projet est sous licence opensource
 
 ## Contact
 

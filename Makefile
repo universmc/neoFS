@@ -1,30 +1,30 @@
 # Chemins de dossiers
-CLIENT_DIR := client
-SERVER_DIR := server
+CLIENT_DIR := frontend/swagger-app/src
+SERVER_DIR := backend/
 
-# Commandes de démarrage
-start-nodejs:
-	@echo "Démarrage du serveur Node.js..."
-	@cd $(SERVER_DIR) && npm start
-
-start-php:
-	@echo "Démarrage du serveur PHP..."
-	@php -S localhost:$(PORT_PHP)
+# Ports des services
+PORT_PHP := 5001
+PORT_NODEJS := 3001
+PORT_MYSQL := 8080
+PORT_REACT := 3100
+PORT_FTP := 21
 
 # Commandes pour les services et outils
-start-mysql:
-	@echo "Démarrage du service MySQL..."
-	# Commande pour démarrer MySQL
+start-backend:
+	@echo "Démarrage du serveur Node.js..."
+	@cd $(SERVER_DIR) & 
+	@npm start-nodejs
 
-start-ftp:
-	@echo "Démarrage du service FTP..."
-	# Commande pour démarrer le service FTP
+start-frontend:
+	@echo "Démarrage de l'application React..."
+	@cd $(CLIENT_DIR) &
+	@npm start-react
 
-# Test des intégrations API
-test-apis:
-	@echo "Test des intégrations avec GitHub, Notion, HuggingFace, etc..."
-	# Commandes pour tester les intégrations API
+start-srv:
+	@echo "Démarrage du backend et du frontend..."
+	@make start-backend &
+	@make start-frontend &
+	@npm run style
 
 # Autres commandes utiles
-.PHONY: start-nodejs start-php start-mysql start-ftp test-apis
-
+.PHONY: start-backend start-frontend start-srv

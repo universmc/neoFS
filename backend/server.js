@@ -5,33 +5,30 @@ const swaggerJsdoc = require('swagger-jsdoc');
 
 const app = express();
 
-const swaggerDefinition = {
-    openapi: '3.0.1',
-    info: {
-      title: 'univers-mc.cloud API',
-      version: '1.0.0',
-      description: 'The API for univers-mc.cloud',
+// Configuration de Swagger
+const options = {
+    definition: {
+        openapi: '3.0.0',
+        info: {
+            title: 'univers-mc.cloud API',
+            version: '1.0.0',
+            description: 'The API for univers-mc.cloud',
+        },
+        servers: [
+            {
+                url: 'http://localhost:3001',
+                description: 'Local server',
+            },
+            // Ajoutez d'autres serveurs ici si nécessaire
+        ],
     },
-    servers: [
-      {
-        url: 'http://localhost:3000', // URL de votre serveur local
-        description: 'Local server',
-      },
-      // Ajoutez d'autres serveurs ici si nécessaire
-    ],
-  };
-  
-  const options = {
-    swaggerDefinition,
-    // Emplacement des fichiers qui contiennent des commentaires de documentation
-    apis: ['./routes/*.js'], // Changez en fonction de votre structure de projet
-  };
-  
-  const swaggerSpec = swaggerJSDoc(options);
-  
+    apis: ['./routes/*.js'], // Emplacement des fichiers contenant les commentaires de documentation
+};
 
-const swaggerSpecs = swaggerJsdoc(swaggerOptions);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpecs));
+const swaggerSpec = swaggerJsdoc(options);
+
+// Middleware pour servir Swagger UI
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // Routage des fichiers JSON
 app.get('/json/:filename', (req, res) => {
@@ -39,7 +36,10 @@ app.get('/json/:filename', (req, res) => {
     res.sendFile(path.join(__dirname, 'json', `${filename}.json`));
 });
 
+// Servir les fichiers statiques de React
+app.use(express.static(path.join(__dirname, '../frontend/swagger-app/build')));
+
 // Autres routes et configurations...
 
-const PORT = 3000;
+const PORT = 3010;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
