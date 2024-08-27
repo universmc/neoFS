@@ -29,8 +29,8 @@ menu() {
     echo "  ║            [6] - Build Composant                                          ║";
     echo "  ║            [7] - Build Page                                               ║";
     echo "  ║            [8] - Chatbot                                                  ║";
-    echo "  ║            [9] - Exit                                                     ║";
-    echo "  ║                                                                           ║";
+    echo "  ║            [8] - Update                                                   ║";
+    echo "  ║           [10] - Exit                                                     ║";
     echo "  ║                                                                           ║";
     echo "  ║                                                                           ║";
     echo "  ║                                                                           ║";
@@ -70,6 +70,9 @@ case $commande in
             ;;
         9)
             make commande9
+            ;;
+        10)
+            make commande10
             ;;
         r)
             clear

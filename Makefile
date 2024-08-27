@@ -6,6 +6,10 @@ COMMANDE3_MSG="✨ initialisation MyPrompt ✨"
 COMMANDE4_MSG="✨ generation docomentation Projet"
 COMMANDE5_MSG="✨ Initialisation du chatbot✨"
 COMMANDE6_MSG="✨ Mise en état du dossier sur github✨"
+COMMANDE7_MSG="✨ ...✨"
+COMMANDE8_MSG="✨ ...✨"
+COMMANDE9_MSG="✨ ...✨"
+COMMANDE10_MSG="✨...✨"
 
 # Ajoutez une règle pour chaque commande
 commande1:
