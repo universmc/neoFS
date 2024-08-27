@@ -6,7 +6,6 @@ const { exec } = require('child_process');
 const fs = require('fs');
 const readline = require("readline");
 const Groq = require("groq-sdk");
-const id = require("../groq");
 const Telegram = require("./piBot")
 
 const app = express();

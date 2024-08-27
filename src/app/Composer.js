@@ -4,10 +4,10 @@ const { Telegraf } = require('telegraf');
 const axios = require('axios');
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
-const componentReact = process.argv[2] || 'System-_react'; //  Obtenir le sujet via l'argument de ligne de commande
+const componentReact = process.argv[2] || 'EcoSystem-_node'; //  Obtenir le sujet via l'argument de ligne de commande
 
 const components = [
-   "React_NewBie",
+   "Next_Js",
   // "composants-header_react",
   // "composants-mainContent_react",
   // "composants-bouton_react",
@@ -33,7 +33,7 @@ async function main() {
       max_tokens: 4096,
     }).then((chatCompletion) => {
       const mdContent = chatCompletion.choices[0]?.message?.content;
-      const outputFilePath = `HowTo/howTo_${componentReact}_` + new Date().toISOString().replace(/[-:TZ]/g, "") + ".md";
+      const outputFilePath = `Composants/howTo_${componentReact}_` + new Date().toISOString().replace(/[-:TZ]/g, "") + ".md";
 fs.writeFileSync(outputFilePath, mdContent);
       console.log(`Le How-To sur ${componentReact} a été enregistrée sur github dans ${outputFilePath}`);       
     });
