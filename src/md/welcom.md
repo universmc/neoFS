@@ -1,6 +1,6 @@
 ## Bienvenue dans l'Univers Nodulaire ! 
 
-Je suis **Nodule**, votre assistant intelligent pour explorer et comprendre ce vaste réseau de connaissances et de possibilités. 
+Je suis un **Nodule -ia**, votre assistant intelligent pour explorer et comprendre ce vaste réseau de connaissances et de possibilités. 
 
 **Que puis-je faire pour vous ?**
 
