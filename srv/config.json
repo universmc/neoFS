@@ -1,7 +1,7 @@
 {
     "projet" : {
       "name":"univers-mc",
-      "siteWeb":"iounivers-mc.cloud",
+      "siteWeb":"univers-mc.cloud",
       "RDF":"SEO",
       "apiRest":"nodejs swagger electron qroq ssh ftp zshrc github",
       "crypto":"Piumc",

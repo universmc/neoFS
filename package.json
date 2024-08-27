@@ -1,11 +1,13 @@
 {
-  "name": "neoFs",
+  "name": "neofs",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
   "scripts": {
     "dev": "next dev",
+    "start": "electron .",
     "build": "next build",
-    "start": "next start",
+    "Next": "next start",
     "lint": "next lint"
   },
   "Mistral": {

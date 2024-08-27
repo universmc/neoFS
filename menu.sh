@@ -74,6 +74,9 @@ case $commande in
         10)
             make commande10
             ;;
+        g)
+        make commandeg
+            ;;
         r)
             clear
             menu

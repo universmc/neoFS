@@ -53,6 +53,10 @@ commande9:
 commande10:
 	@echo "${COMMANDE10_MSG}"
 
+commandeg:
+	@echo "${COMMANDE10_MSG}"
+	@npm run start
+
 tasks:
 	@node .setup/role.mjs showTasks
 

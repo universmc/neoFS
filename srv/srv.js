@@ -6,7 +6,6 @@ const { exec } = require('child_process');
 const fs = require('fs');
 const readline = require("readline");
 const Groq = require("groq-sdk");
-const Telegram = require("./piBot")
 
 const app = express();
 
@@ -48,7 +47,7 @@ app.get('/json/:filename', (req, res) => {
 });
 
 // Servir les fichiers statiques de React
-app.use(express.static(path.join(__dirname, '../frontend/ux')));
+app.use(express.static(path.join(__dirname, '../src/app/')));
 
 // Initialiser l'interface de ligne de commande
 const rl = readline.createInterface({
