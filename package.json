@@ -1,25 +1,61 @@
 {
-  "name": "machine-learning",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "name": "neoFs",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "style": "sass --watch build/style.scss src/css/style.css",
-    "start-nodejs": "node --watch backend/server.js",
-    "start-react": "node --watch frontend/swagger-app/app.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "univers-mc",
+  "Mistral": {
+    "model": "mixtral-8x7b-32768",
+    "temperature": 0.5,
+    "max_tokens": "4096",
+    "top_p": "1",
+    "stream": "True",
+    "stop": "None"
+  },
+  "llma": {
+    "model": "llama3-8b-8192",
+    "temperature": 0.5,
+    "max_tokens": "4096",
+    "top_p": "1",
+    "stream": "True",
+    "stop": "None"
+  },
+  "gemma": {
+    "model": "gemma-7b-it",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "temperature": 0.5,
+    "max_tokens": "4096",
+    "top_p": "1",
+    "stream": "True",
+    "stop": "None"
+  },
+  "gpt": {
+    "model": "gpt-4o",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "temperature": 0.5,
+    "max_tokens": "4096",
+    "top_p": "1",
+    "stream": "True",
+    "stop": "None"
+  },
   "dependencies": {
-    "express": "^4.18.2",
-    "marked": "^11.1.1",
-    "pytorch": "^0.0.1",
-    "swagger": "^0.7.5",
-    "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.0",
-    "swagger-ui-react": "^5.11.0",
-    "transformer": "^1.2.8"
+    "next": "14.2.6",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.6",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }

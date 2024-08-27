@@ -1,77 +1,36 @@
-# Univers MC Cloud - Formation en Développement Web Fullstack et IA
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Bienvenue sur le projet Univers MC Cloud, un espace dédié à la formation en développement web fullstack et en intelligence artificielle. Ce projet est conçu pour offrir une expérience d'apprentissage interactive, en utilisant NeoFS et l'IA Codex GPT pour une génération de code assistée.
+## Getting Started
 
-## Structure du Projet
+First, run the development server:
 
-Le projet est divisé en plusieurs composants principaux :
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- **Frontend** : Développé avec React, intégrant des designs modernes et interactifs.
-- **Backend** : Construit avec Node.js et Express, et incluant une documentation API Swagger.
-- **Intégration IA Codex GPT** : Utilisation de NeoFS pour générer des codes et scripts.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Ports et Services Utilisés
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- Serveur PHP : `http://localhost:5011`
-- Serveur Node.js/Express : `http://localhost:3000`
-- Swagger UI : `http://localhost:3001`
-- Autres services : OVH (Port 8080), FTP (Port 21), MySQL, et Hub (Port 420).
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Documentation Full Stack
+## Learn More
 
-### Frontend
+To learn more about Next.js, take a look at the following resources:
 
-- **Technologies** : React, SASS, SVG, JavaScript.
-- **Commandes** :
-  - Démarrage : `npm start`
-  - Installation des dépendances : `npm install`
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Backend
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-- **Technologies** : Node.js, Express, Swagger.
-- **Swagger UI** : Documentation API sur `http://localhost:3000/api-docs`.
-- **Commandes** :
-  - Démarrage : `node server.js`
-  - Installation des dépendances : `npm install`
+## Deploy on Vercel
 
-### Intelligence Artificielle et NeoFS
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-- **Utilisation de NeoFS** : Intégration dans le processus de développement.
-- **Développement Assisté par IA** : Aide à la génération de code front-end et back-end.
-
-## Installation et Configuration
-
-Pour installer et configurer le projet :
-
-1. Cloner le repository : `git clone [URL_DU_REPOSITORY]`
-2. Installer les dépendances :
-   - Frontend : `cd frontend && npm install`
-   - Backend : `cd backend && npm install`
-
-## Utilisation
-
-Pour utiliser le projet :
-
-1. Démarrer le Backend : `cd backend && node server.js`
-2. Démarrer le Frontend : `cd frontend && npm start`
-
-## Tests
-
-Instructions sur l'exécution des tests.
-
-## Contribution
-
-Guidelines howto
-
-## Licence
-
-Ce projet est sous licence opensource
-
-## Contact
-
-Pour toute question, veuillez contacter [Email/Contact Info].
-
----
-
-cc by mc+neoFS
-http://54.36.91.62:8080
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
