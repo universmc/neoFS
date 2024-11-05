@@ -94,31 +94,29 @@ async function main() {
   // Exemple d'utilisation
   const question = "Quelle est la meilleure façon de procéder pour trouver la vérité ?";
   const options = [
-    "opt1",
-    "opt2",
-    "opt3",
-    "opt4"
+    "Interroger le membre du parti politique",
+    "Rechercher des preuves pour étayer les accusations",
+    "Consulter un expert en fraude électorale"
   ];
   const consequences = [
-    "sequence1",
-    "sequence2",
-    "sequence3",
-    "sequence4"
+    "Vous aurez une conversation avec le membre du parti politique, qui pourrait être honnête ou tenter de vous duper.",
+    "Vous partirez à la recherche de preuves pour étayer les accusations de fraude.",
+    "Vous consulter un expert en fraude électorale pour avoir une perspective professionnelle sur la situation."
   ];
   const nextQuestions = [
-    ["QuestionA"],
-    ["QuestionB"],
-    ["QuestionC"]
+    ["Ses réponses sont-elles crédibles ?", "Avez-vous besoin de poursuivre votre enquête ?"],
+    ["Les preuves que vous trouvez sont-elles suffisantes pour étayer les accusations ?"],
+    ["Le consultant vous donne des conseils pour poursuivre votre enquête. Souhaitez-vous les suivre ?"]
   ];
   const causes = [
-    "Choi1{opt1+feedback_consequence_choix_opt_list}+QuestionA ou QuestionB ou QuestionC",
-    "choix2{opt1+feedback_consequence_choix_opt_list}+QuestionA ou QuestionB ou QuestionC",
-    "Choix3{opt1+feedback_consequence_choix_opt_list}+QuestionA ou QuestionB ou QuestionC",
+    "Un membre du parti politique a été accusé de fraude électorale",
+    "Des allégations de fraude électorale ont été portées à votre attention",
+    "Vous avez besoin d'un avis professionnel pour poursuivre votre enquête"
   ];
   const effects = [
-    ["predicton/statistique.fonction.causes1"],
-    ["predicton/statistique.fonction.causes2"],
-    ["predicton/statistique.fonction.causes3"],
+    ["Vous obtenez des informations qui pourraient être vraies ou fausses", "Le membre du parti politique pourrait devenir plus prudent dans ses actions futures"],
+    ["Vous découvrez des preuves importantes qui peuvent aider à étayer les accusations", "Vous pouvez risquer de vous faire remarquer par les personnes impliquées dans la fraude"],
+    ["Vous recevez un avis professionnel pour vous guider dans votre enquête", "Vous devrez peut-être payer pour les services du consultant"]
   ];
   
   const response = templateResponse(question, options, consequences, nextQuestions, causes, effects);
